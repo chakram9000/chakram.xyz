@@ -1,0 +1,25 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getTranslations, LOCALES, type Locale } from "../../i18n/lib";
+import Boilerplate from "../../layouts/Boilerplate.astro";
+
+export const getStaticPaths = (() => {
+	return LOCALES.map((locale) => ({ params: { locale } }));
+}) satisfies GetStaticPaths;
+
+const locale = Astro.currentLocale as Locale;
+const t = getTranslations(locale);
+---
+
+<Boilerplate title="الصفحة الرئيسية" locale={locale}>
+	<img
+		id="worker"
+		class="absolute top-1/2 left-1/2 -translate-x-1/2"
+		src="/worker.gif"
+	/>
+	<img
+		class="absolute top-12.5 left-1/2 -translate-x-1/2 max-w-[100vw]"
+		src="/underconstruction.gif"
+	/>
+	{t["hero.name"]}
+</Boilerplate>

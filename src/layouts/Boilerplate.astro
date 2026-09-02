@@ -1,0 +1,24 @@
+---
+import { type Locale } from "../i18n/lib";
+import "../static/style.css";
+
+interface Props {
+	title: string;
+	locale: Locale;
+}
+
+const props = Astro.props;
+---
+
+<html lang={props.locale} dir={props.locale === "ar" ? "rtl" : "ltr"}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/gif" href="/worker.gif" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>chakram.xyz | {props.title}</title>
+	</head>
+	<body class="bg-black flex flex-col items-stretch">
+		<slot />
+	</body>
+</html>
