@@ -1,5 +1,4 @@
 ---
-import "./reset.css";
 import "./style.css";
 ---
 
@@ -11,8 +10,8 @@ import "./style.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>My Homepage</title>
 	</head>
-	<body>
+	<body class="bg-black h-screen w-screen flex items-center justify-center overflow-hidden">
 		<img id="worker" src="/worker.gif" />
-		<img id="banner" src="/underconstruction.gif" />
+		<img class="absolute top-12.5 left-1/2 -translate-x-1/2 max-w-[100vw]" src="/underconstruction.gif" />
 	</body>
 </html>
