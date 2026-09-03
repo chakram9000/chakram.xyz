@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  --color-text: theme(--color-stone-200);
+  --color-text-heading: theme(--color-stone-100);
+  --color-text-muted: theme(--color-stone-400);
+  --color-text-dim: theme(--color-stone-500);
+}
+
+@layer base {
+  body {
+    color: var(--color-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-text-heading);
+  }
+}
