@@ -1,0 +1,26 @@
+---
+import { getTranslations, type Locale } from "../../i18n/lib";
+import ProjectCard from "./ProjectCard.astro";
+import KhizanahIMG from "../../static/projects/khizanah.png";
+
+interface Props {
+	locale: Locale;
+}
+
+const props = Astro.props;
+const t = getTranslations(props.locale);
+---
+
+<section class="flex flex-col gap-8">
+	<h1 class="text-3xl font-bold">{t["projects.title"]}</h1>
+
+	<div class="flex">
+		<ProjectCard
+			img={KhizanahIMG}
+			title="Test"
+			desc="test"
+			githubURL="https://github.com/chakram9000/khizanah-app"
+			techUsed={["python", "qt"]}
+		/>
+	</div>
+</section>

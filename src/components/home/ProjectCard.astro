@@ -1,0 +1,51 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import { TECH_ICONS, type Technology } from "../../constants.ts";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	img: ImageMetadata;
+	title: string;
+	desc: string;
+	cardURL?: string; // if undefined, will be set to githubURL
+	githubURL: string;
+	techUsed: Technology[];
+}
+
+const props = Astro.props;
+if (!props.cardURL) props.cardURL = props.githubURL;
+---
+
+<div
+	class="flex flex-col items-stretch max-w-72 rounded-lg border-2 border-stone-800 hover:border-stone-700 group"
+>
+	<a
+		href={props.cardURL}
+		target="_blank"
+		class="h-24 overflow-hidden rounded-t-lg"
+	>
+		<Image
+			src={props.img}
+			alt="project image"
+			class="opacity-50 group-hover:opacity-100 transition-opacity max-w-full"
+		/>
+	</a>
+
+	<div class="flex flex-col gap-1 p-3">
+		<h2 class="text-lg font-bold">{props.title}</h2>
+		<p class="text-lg">{props.desc}</p>
+		<div class="flex flex-wrap items-center">
+			<a href={props.githubURL} target="_blank" class="size-5 me-auto">
+				<Icon name={TECH_ICONS["github"]} />
+			</a>
+			<div class="flex flex-wrap items-center gap-2">
+				{
+					props.techUsed.map((tech) => (
+						<Icon name={TECH_ICONS[tech]} class="size-4" />
+					))
+				}
+			</div>
+		</div>
+	</div>
+</div>

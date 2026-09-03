@@ -3,6 +3,8 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, fontProviders } from "astro/config";
 import { LOCALES } from "./src/i18n/lib";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -12,7 +14,7 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
-      name: "Schehrazade",
+      name: "Scheherazade New",
       cssVariable: "--font-schehrazade",
     },
   ],
@@ -26,4 +28,6 @@ export default defineConfig({
       redirectToDefaultLocale: true,
     },
   },
+
+  integrations: [icon()],
 });

@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { getTranslations, LOCALES, type Locale } from "../../i18n/lib";
 import Boilerplate from "../../layouts/Boilerplate.astro";
 import Hero from "../../components/home/Hero.astro";
+import Projects from "../../components/home/Projects.astro";
 
 export const getStaticPaths = (() => {
 	return LOCALES.map((locale) => ({ params: { locale } }));
@@ -14,4 +15,5 @@ const t = getTranslations(locale);
 
 <Boilerplate title={t["home.title"]} locale={locale}>
 	<Hero locale={locale} />
+	<Projects locale={locale} />
 </Boilerplate>
