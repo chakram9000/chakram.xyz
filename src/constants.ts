@@ -7,7 +7,10 @@ export type Technology =
   | "tailwindcss"
   | "github"
   | "python"
-  | "qt";
+  | "qt"
+  | "ejs"
+  | "prisma"
+  | "js";
 
 export const TECH_ICONS: Record<Technology, string> = Object.freeze({
   react: "simple-icons:react",
@@ -19,4 +22,7 @@ export const TECH_ICONS: Record<Technology, string> = Object.freeze({
   github: "simple-icons:github",
   python: "simple-icons:python",
   qt: "simple-icons:qt",
+  ejs: "simple-icons:ejs",
+  prisma: "simple-icons:prisma",
+  js: "simple-icons:javascript",
 });

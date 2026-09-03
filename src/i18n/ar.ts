@@ -14,7 +14,13 @@ const home = {
 };
 
 const projects = {
-  "projects.title": "مشاريعي",
+  "projects.title": "بعض مشاريعي الشخصية",
+  "projects.khizanah.title": "خزانة",
+  "projects.khizanah.desc":
+    "واجهة سهلة لتحميل المقاطع وقوائم التشغيل من اليوتيوب، لأجهزة الوينداوز ولينكس",
+  "projects.minidrive.title": "Minidrive",
+  "projects.minidrive.desc":
+    "نسخة مخففة من Google Drive؛ يمكن للمستخدم إنشاء حساب، وحفظ الملفات والمجلدات وترتيبها، ونشر المجلدات عبر رابط عام.",
 };
 
 export const ARABIC_MESSAGES = {

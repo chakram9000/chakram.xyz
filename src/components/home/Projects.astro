@@ -2,6 +2,7 @@
 import { getTranslations, type Locale } from "../../i18n/lib";
 import ProjectCard from "./ProjectCard.astro";
 import KhizanahIMG from "../../static/projects/khizanah.png";
+import MinidriveIMG from "../../static/projects/minidrive.png";
 
 interface Props {
 	locale: Locale;
@@ -14,13 +15,20 @@ const t = getTranslations(props.locale);
 <section class="flex flex-col gap-8">
 	<h1 class="text-3xl font-bold">{t["projects.title"]}</h1>
 
-	<div class="flex">
+	<div class="flex items-stretch flex-wrap gap-8">
 		<ProjectCard
 			img={KhizanahIMG}
-			title="Test"
-			desc="test"
+			title={t["projects.khizanah.title"]}
+			desc={t["projects.khizanah.desc"]}
 			githubURL="https://github.com/chakram9000/khizanah-app"
 			techUsed={["python", "qt"]}
+		/>
+		<ProjectCard
+			img={MinidriveIMG}
+			title={t["projects.minidrive.title"]}
+			desc={t["projects.minidrive.desc"]}
+			githubURL="https://github.com/chakram9000/minidrive"
+			techUsed={["js", "express", "postgresql", "prisma", "ejs"]}
 		/>
 	</div>
 </section>
