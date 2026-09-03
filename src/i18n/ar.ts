@@ -3,11 +3,11 @@ const home = {
   "home.hero.name": "ش. محمد أكرم",
   "home.hero.hello": "مرحبًا بكم",
   "home.hero.p1":
-    "أنا ش. محمد أكرم، مبرمج للويب (Fullstack)، طالب علوم الحاسوب وتخصص الذكاء الاصطناعي.",
+    "أنا ش. محمد أكرم، مبرمج للويب (Fullstack)، طالب علوم الحاسوب وتخصص الذكاء الاصطناعي بالجزائر.",
   "home.hero.p2":
     "أبني واجهات المواقع باستخدام React ، Tailwindcss ، Astro ، Next.js ، ... وغيرها، بهندسات مختلفة نحو: SPA ، SSR ، SSG ، وما اشتُقَّ منها.",
   "home.hero.p3":
-    "وأبني أنظمة الباك وAPIs أند باستخدام Express ، Hono ، PostgresQL ، Prisma.",
+    "وأبني أنظمة الباكأند و API باستخدام Express ، Hono ، PostgresQL ، Prisma.",
   "home.hero.p4":
     "أستخدم ليكنس و Neovim في العمل، وأحيانا أبرمج باللغات القريبة من الجهاز، مثل C.",
   "home.hero.img_label": "(هذا ليس مكتبي)",
