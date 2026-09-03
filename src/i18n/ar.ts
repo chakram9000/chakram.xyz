@@ -1,5 +1,6 @@
 export const ARABIC_MESSAGES = {
-  "hero.name": "ش. محمد أكرم",
+  "home.title": "الصفحة الرئيسية",
+  "home.hero.name": "ش. محمد أكرم",
 };
 
 // arabic is the template to follow

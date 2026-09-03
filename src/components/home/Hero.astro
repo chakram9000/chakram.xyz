@@ -1,0 +1,14 @@
+---
+import { getTranslations, type Locale } from "../../i18n/lib";
+
+interface Props {
+	locale: Locale;
+}
+
+const props = Astro.props;
+const t = getTranslations(props.locale);
+---
+
+<section class="">
+	<h1>I'm Mr. doctor.</h1>
+</section>

@@ -18,7 +18,11 @@ const props = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>chakram.xyz | {props.title}</title>
 	</head>
-	<body class="bg-black flex flex-col items-stretch">
-		<slot />
+	<body class="bg-stone-900 flex flex-col items-stretch">
+		<main
+			class="mx-auto max-w-2xl w-11/12 flex flex-col items-stretch border border-stone-700 *:border-b *:border-b-stone-700"
+		>
+			<slot />
+		</main>
 	</body>
 </html>
