@@ -9,7 +9,8 @@ export const ARABIC_MESSAGES = {
   "home.hero.p3":
     "وأبني أنظمة الباك وAPIs أند باستخدام Express ، Hono ، PostgresQL ، Prisma.",
   "home.hero.p4":
-    "أستخدم ليكنس و Neovim في عملي، وأحيانا أبرمج باللغات القريبة من الجهاز، مثل C.",
+    "أستخدم ليكنس و Neovim في العمل، وأحيانا أبرمج باللغات القريبة من الجهاز، مثل C.",
+  "home.hero.img_label": "(هذا ليس مكتبي)",
 };
 
 // arabic is the template to follow

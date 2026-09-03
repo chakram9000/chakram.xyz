@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import { getTranslations, type Locale } from "../../i18n/lib";
+import heroImage from "../../static/dark_room_with_computer.jpg";
 
 interface Props {
 	locale: Locale;
@@ -9,10 +11,17 @@ const props = Astro.props;
 const t = getTranslations(props.locale);
 ---
 
-<section class="flex flex-col gap-1 [&_p]:text-lg">
-	<h1 class="text-3xl mb-1">{t["home.hero.hello"]}</h1>
-	<p class="mb-1">{t["home.hero.p1"]}</p>
-	<p>{t["home.hero.p2"]}</p>
-	<p>{t["home.hero.p3"]}</p>
-	<p>{t["home.hero.p4"]}</p>
+<section class="flex gap-8 items-center">
+	<div class="flex-1 flex flex-col gap-2 [&_p]:text-lg">
+		<h1 class="text-3xl mb-2">{t["home.hero.hello"]}</h1>
+		<p class="mb-2">{t["home.hero.p1"]}</p>
+		<p>{t["home.hero.p2"]}</p>
+		<p>{t["home.hero.p3"]}</p>
+		<p>{t["home.hero.p4"]}</p>
+	</div>
+
+	<div class="max-w-48 flex flex-col gap-2 items-center">
+		<Image src={heroImage} alt="" class="rounded-xl opacity-70" />
+		<p class="ttext-xs italic opacity-40">{t["home.hero.img_label"]}</p>
+	</div>
 </section>
