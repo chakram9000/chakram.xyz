@@ -5,20 +5,20 @@ const home = {
   "home.hero.p1":
     "أنا ش. محمد أكرم، مبرمج للويب (Fullstack)، طالب علوم الحاسوب وتخصص الذكاء الاصطناعي بالجزائر.",
   "home.hero.p2":
-    "أبني واجهات المواقع باستخدام React ، Tailwindcss ، Astro ، Next.js ، ... وغيرها، بهندسات مختلفة نحو: SPA ، SSR ، SSG ، وما اشتُقَّ منها.",
+    "أبرمج منذ 2019، ولدي خبرة في لغات وتقنيات مختلفة. وجلّ خبرتي المهنية في بناء واجهات مواقع الويب، إلا أنني أبني APIs و برامج Fullstack كذلك.",
   "home.hero.p3":
-    "وأبني أنظمة الباكأند و API باستخدام Express ، Hono ، PostgresQL ، Prisma.",
+    "أستخدم عادةً: Javascript, Typescript, Astro, React, Express, PostgresQL, وسابقًا Next.js. كذلك عندي اهتمام باللغات القريبة من الجهاز كـ: C.",
   "home.hero.p4":
-    "أستخدم ليكنس و Neovim في العمل، وأحيانا أبرمج باللغات القريبة من الجهاز، مثل C.",
+    "أعتني بسرعة الإنتاج وسرعة المنتوج، وبفهم الأدوات التي أستخدمها بدلاً من النسخ واللصق الأعمى.",
   "home.hero.img_label": "(هذا ليس مكتبي)",
 };
 
 const projects = {
-  "projects.title": "بعض مشاريعي الشخصية",
-  "projects.professional": "مهنيّ",
+  "projects.title": "بعض مشاريعي",
+  "projects.professional": "مشروع مهنيّ",
   "projects.khizanah.title": "خزانة",
   "projects.khizanah.desc":
-    "واجهة سهلة لتحميل المقاطع وقوائم التشغيل من اليوتيوب، لأجهزة الوينداوز ولينكس",
+    "واجهة سهلة لتحميل المقاطع وقوائم التشغيل من اليوتيوب، لأجهزة الوينداوز ولينكس.",
   "projects.minidrive.title": "Minidrive",
   "projects.minidrive.desc":
     "نسخة مخففة من Google Drive؛ يمكن للمستخدم إنشاء حساب، وحفظ الملفات والمجلدات وترتيبها، ونشر المجلدات عبر رابط عام.",
