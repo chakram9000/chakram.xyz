@@ -38,10 +38,17 @@ const projects = {
   "project.more-link": "في صفحتي على كيتهاب.",
 };
 
+const footer = {
+  "footer.built-with": "تم بناء هذا الموقع باستخدام Astro وTailwindcss.",
+  "footer.wip":
+    "لا يزال هذا الموقع قيد البناء! نرجو أن تعودوا له بين الفينة والفينة.",
+};
+
 export const ARABIC_MESSAGES = {
   ...header,
   ...hero,
   ...projects,
+  ...footer,
 };
 
 // arabic is the template to follow

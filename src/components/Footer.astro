@@ -1,0 +1,18 @@
+---
+import { getTranslations } from "../i18n/lib";
+import type { Locale } from "../i18n/lib";
+
+interface Props {
+	locale: Locale;
+}
+
+const props = Astro.props;
+const t = getTranslations(props.locale);
+---
+
+<footer
+	class="w-screen min-h-16 py-8 flex flex-col gap-2 items-center justify-center text-text-muted text-sm lg:text-base text-center"
+>
+	<p>{t["footer.built-with"]}</p>
+	<p><b>{t["footer.wip"]}</b></p>
+</footer>
