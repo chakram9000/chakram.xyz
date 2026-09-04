@@ -24,4 +24,5 @@ const t = getTranslations(props.locale);
 	<a href="https://github.com/chakram9000" target="_blank"
 		>{t["header.github"]}</a
 	>
+	<a href={getRelativeLocaleUrl(props.locale, "/blogs")}>{t["header.blogs"]}</a>
 </header>
