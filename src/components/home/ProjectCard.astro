@@ -37,16 +37,15 @@ if (!props.cardURL) props.cardURL = props.githubURL;
 		<p class="text-md">{props.desc}</p>
 	</div>
 
-	<div class="flex flex-wrap items-center p-3">
-		<a href={props.githubURL} target="_blank" class="size-5 me-auto">
-			<Icon name={TECH_ICONS["github"]} />
+	<div class="flex flex-wrap gap-3 items-center p-3">
+		<a href={props.githubURL} target="_blank" class="me-auto">
+			<Icon name={TECH_ICONS["github"]} class="size-6" />
 		</a>
-		<div class="flex flex-wrap items-center gap-2">
-			{
-				props.techUsed.map((tech) => (
-					<Icon name={TECH_ICONS[tech]} class="size-4" />
-				))
-			}
-		</div>
+
+		{
+			props.techUsed.map((tech) => (
+				<Icon name={TECH_ICONS[tech]} class="size-4" />
+			))
+		}
 	</div>
 </div>
