@@ -3,32 +3,50 @@ import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import { TECH_ICONS, type Technology } from "../../constants.ts";
 import { Icon } from "astro-icon/components";
+import clsx from "clsx";
+import { getTranslations, type Locale } from "../../i18n/lib";
 
-interface Props {
+// @TODO: redesign this to be more modular.
+type Props = {
+	locale: Locale;
 	img: ImageMetadata;
 	title: string;
 	desc: string;
 	cardURL?: string; // if undefined, will be set to githubURL
-	githubURL: string;
+	githubURL?: string;
+	isProfessional?: boolean;
 	techUsed: Technology[];
-}
+};
 
 const props = Astro.props;
-if (!props.cardURL) props.cardURL = props.githubURL;
+if (!props.cardURL && props.githubURL) props.cardURL = props.githubURL;
+
+const t = getTranslations(props.locale);
 ---
 
 <div
-	class="flex flex-col items-stretch rounded-lg border-2 border-stone-800 hover:border-stone-700 group"
+	class={clsx(
+		"flex flex-col items-stretch rounded-lg overflow-hidden border-2 group",
+		props.isProfessional
+			? "border-emerald-950 hover:border-emerald-900 relative"
+			: "border-stone-800 hover:border-stone-700",
+	)}
 >
-	<a
-		href={props.cardURL}
-		target="_blank"
-		class="h-24 overflow-hidden rounded-t-lg"
-	>
+	{
+		props.isProfessional && (
+			<div class="absolute w-full z-10 bg-emerald-950 group-hover:bg-emerald-900 py-1.5">
+				<p class="text-sm font-bold text-center">
+					{t["projects.professional"]}
+				</p>
+			</div>
+		)
+	}
+
+	<a href={props.cardURL ?? "#"} target="_blank" class="h-32 overflow-hidden">
 		<Image
 			src={props.img}
 			alt="project image"
-			class="opacity-50 group-hover:opacity-100 transition-opacity max-w-full"
+			class="lg:opacity-50 group-hover:opacity-100 transition-opacity max-w-full"
 		/>
 	</a>
 
@@ -37,11 +55,14 @@ if (!props.cardURL) props.cardURL = props.githubURL;
 		<p class="text-md">{props.desc}</p>
 	</div>
 
-	<div class="flex flex-wrap gap-3 items-center p-3">
-		<a href={props.githubURL} target="_blank" class="me-auto">
-			<Icon name={TECH_ICONS["github"]} class="size-6" />
-		</a>
-
+	<div class="flex flex-wrap gap-3 items-center justify-end p-3">
+		{
+			props.githubURL && (
+				<a href={props.githubURL} target="_blank" class="me-auto">
+					<Icon name={TECH_ICONS["github"]} class="size-6" />
+				</a>
+			)
+		}
 		{
 			props.techUsed.map((tech) => (
 				<Icon name={TECH_ICONS[tech]} class="size-4" />

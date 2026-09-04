@@ -12,6 +12,8 @@ export type Technology =
   | "prisma"
   | "c"
   | "raylib"
+  | "cloudflare"
+  | "zoho"
   | "js";
 
 export const TECH_ICONS: Record<Technology, string> = Object.freeze({
@@ -28,5 +30,7 @@ export const TECH_ICONS: Record<Technology, string> = Object.freeze({
   prisma: "simple-icons:prisma",
   c: "simple-icons:c",
   raylib: "simple-icons:raylib",
+  cloudflare: "simple-icons:cloudflare",
+  zoho: "simple-icons:zoho",
   js: "simple-icons:javascript",
 });

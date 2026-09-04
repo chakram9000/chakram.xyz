@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard.astro";
 import KhizanahIMG from "../../static/projects/khizanah.png";
 import MinidriveIMG from "../../static/projects/minidrive.png";
 import CellularIMG from "../../static/projects/cellautomata.png";
+import ForoqIMG from "../../static/projects/foroq.png";
 
 interface Props {
 	locale: Locale;
@@ -18,6 +19,16 @@ const t = getTranslations(props.locale);
 
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 		<ProjectCard
+			locale={props.locale}
+			img={ForoqIMG}
+			title={t["projects.foroq.title"]}
+			desc={t["projects.foroq.desc"]}
+			cardURL="https://foroq.com/"
+			techUsed={["astro", "tailwindcss", "express", "zoho", "cloudflare"]}
+			isProfessional
+		/>
+		<ProjectCard
+			locale={props.locale}
 			img={KhizanahIMG}
 			title={t["projects.khizanah.title"]}
 			desc={t["projects.khizanah.desc"]}
@@ -25,6 +36,7 @@ const t = getTranslations(props.locale);
 			techUsed={["python", "qt"]}
 		/>
 		<ProjectCard
+			locale={props.locale}
 			img={MinidriveIMG}
 			title={t["projects.minidrive.title"]}
 			desc={t["projects.minidrive.desc"]}
@@ -32,6 +44,7 @@ const t = getTranslations(props.locale);
 			techUsed={["js", "express", "postgresql", "prisma", "ejs"]}
 		/>
 		<ProjectCard
+			locale={props.locale}
 			img={CellularIMG}
 			title={t["projects.cellular.title"]}
 			desc={t["projects.cellular.desc"]}

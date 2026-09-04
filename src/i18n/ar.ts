@@ -15,6 +15,7 @@ const home = {
 
 const projects = {
   "projects.title": "بعض مشاريعي الشخصية",
+  "projects.professional": "مهنيّ",
   "projects.khizanah.title": "خزانة",
   "projects.khizanah.desc":
     "واجهة سهلة لتحميل المقاطع وقوائم التشغيل من اليوتيوب، لأجهزة الوينداوز ولينكس",
@@ -24,6 +25,9 @@ const projects = {
   "projects.cellular.title": "محاكي أوتوماتا الخلايا",
   "projects.cellular.desc":
     "برنامج يحاكي مصفوفة خلايا (Cellular Automata)، فيه خلايا مختلفة من حيثُ الشكل والصفات 'الفيزيائية'، كالجاذبية وقابلية الاحتراق. مبرمج بـC99.",
+  "projects.foroq.title": "موقع وكالة 'فروق'",
+  "projects.foroq.desc":
+    "صفحة التعريف والتواصل لوكالة 'فروق' التقنية، فيها تعريف بكل خدمات الوكالة، ونظام مقالات، وخاصية تسجيل البريد الالكتروني للحصول على آخر التحديثات.",
 };
 
 export const ARABIC_MESSAGES = {
