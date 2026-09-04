@@ -13,9 +13,9 @@ const t = getTranslations(props.locale);
 ---
 
 <section class="flex flex-col gap-8">
-	<h1 class="text-3xl font-bold">{t["projects.title"]}</h1>
+	<h1>{t["projects.title"]}</h1>
 
-	<div class="flex items-stretch flex-wrap gap-8">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 		<ProjectCard
 			img={KhizanahIMG}
 			title={t["projects.khizanah.title"]}
