@@ -14,8 +14,15 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
+      name: "Readex Pro",
+      cssVariable: "--font-readex-pro",
+      subsets: ["arabic", "latin"],
+    },
+    {
+      provider: fontProviders.fontsource(),
       name: "Scheherazade New",
-      cssVariable: "--font-schehrazade",
+      cssVariable: "--font-scheherazade",
+      subsets: ["arabic", "latin"],
     },
   ],
 

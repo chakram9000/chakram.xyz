@@ -18,15 +18,15 @@ const props = Astro.props;
 		<link rel="icon" type="image/gif" href="/worker.gif" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<Font cssVariable="--font-schehrazade" />
+		<Font cssVariable="--font-readex-pro" />
 		<title>chakram.xyz | {props.title}</title>
 	</head>
 	<body
-		class="bg-stone-950 flex flex-col items-stretch rtl:font-[--font-schehrazade]"
+		class="bg-stone-950 flex flex-col items-stretch rtl:font-(family-name:--font-readex-pro)"
 	>
 		<Header locale={props.locale} />
 		<main
-			class="bg-stone-900 flex flex-col items-stretch border border-stone-700 mx-auto max-w-4xl w-11/12 *:p-8 *:border-b *:border-b-stone-700 shadow-2xl shadow-white/20"
+			class="bg-stone-900 flex flex-col items-stretch border border-stone-700 mx-auto mb-8 max-w-4xl w-11/12 *:p-8 *:border-b *:border-b-stone-700 shadow-2xl shadow-white/10"
 		>
 			<slot />
 		</main>
