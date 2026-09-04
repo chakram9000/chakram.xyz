@@ -1,6 +1,6 @@
 const header = {
   "header.github": "كيتهاب",
-  "header.blogs": "مقالاتي",
+  "header.blogs": "مقالات",
 };
 
 const home = {

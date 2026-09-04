@@ -28,14 +28,14 @@ const t = getTranslations(props.locale);
 	class={clsx(
 		"flex flex-col items-stretch rounded-lg overflow-hidden border-2 group",
 		props.isProfessional
-			? "border-emerald-950 hover:border-emerald-900 relative"
+			? "border-emerald-900 hover:border-emerald-800 relative"
 			: "border-stone-800 hover:border-stone-700",
 	)}
 >
 	{
 		props.isProfessional && (
-			<div class="absolute w-full z-10 bg-emerald-950 group-hover:bg-emerald-900 py-1.5">
-				<p class="text-sm font-bold text-center">
+			<div class="absolute w-full z-10 bg-emerald-900 group-hover:bg-emerald-800 transition-all group-hover:py-1.5">
+				<p class="hidden group-hover:block text-sm font-bold text-center">
 					{t["projects.professional"]}
 				</p>
 			</div>
