@@ -1,3 +1,8 @@
+const header = {
+  "header.github": "كيتهاب",
+  "header.blogs": "مقالاتي",
+};
+
 const home = {
   "home.title": "الصفحة الرئيسية",
   "home.hero.name": "ش. محمد أكرم",
@@ -31,6 +36,7 @@ const projects = {
 };
 
 export const ARABIC_MESSAGES = {
+  ...header,
   ...home,
   ...projects,
 };

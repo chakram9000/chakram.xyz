@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../static/logo.png";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { getTranslations, type Locale } from "../i18n/lib";
+
+interface Props {
+	locale: Locale;
+}
+
+const props = Astro.props;
+const t = getTranslations(props.locale);
+---
+
+<header
+	class="h-16 bg-stone-900 border-t border-stone-700 flex items-center gap-4 my-4 mx-auto max-w-2xl px-6 rounded-full *:opacity-90 *:hover:opacity-100 *:transition-all *:font-bold"
+>
+	<a href={getRelativeLocaleUrl(props.locale, "/")} class="size-14">
+		<Image src={Logo} alt="Home" />
+	</a>
+
+	<div class="h-1/2 w-px bg-stone-700"></div>
+
+	<a href="https://github.com/chakram9000" target="_blank"
+		>{t["header.github"]}</a
+	>
+	<a href={getRelativeLocaleUrl(props.locale, "/blogs")}>{t["header.blogs"]}</a>
+</header>
