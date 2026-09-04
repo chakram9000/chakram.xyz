@@ -2,8 +2,6 @@
 import { Image } from "astro:assets";
 import { getTranslations, type Locale } from "../../i18n/lib";
 import heroImage from "../../static/hero2.jpg";
-import { Icon } from "astro-icon/components";
-import { ForwardIcon, MailIcon } from "@lucide/astro";
 
 interface Props {
 	locale: Locale;
@@ -13,24 +11,30 @@ const props = Astro.props;
 const t = getTranslations(props.locale);
 ---
 
-<section class="flex flex-col gap-4 items-stretch">
+<section class="flex flex-col gap-3 lg:gap-4 items-stretch">
 	<div class="rounded-xl overflow-hidden shadow">
 		<Image
 			src={heroImage}
 			alt=""
-			class="opacity-60 h-56 object-cover object-[0%_25%]"
+			class="opacity-60 h-40 lg:h-56 object-cover object-[0%_25%]"
 		/>
 	</div>
 
-	<div class="flex-1 flex flex-col gap-5 text-justify [&_p]:leading-6.5">
+	<div
+		class="flex-1 flex flex-col gap-5 text-justify [&_p]:font-light [&_p]:leading-7 lg:[&_p]:leading-6.5"
+	>
 		<h1>{t["home.hero.hello"]}</h1>
 		<p>{t["home.hero.p1"]} {t["home.hero.p2"]}</p>
 		<p>{t["home.hero.p3"]}</p>
 		<p>{t["home.hero.p4"]}</p>
 	</div>
 
-	<p class="ps-3 border-s-2 border-emerald-800 flex items-center text-xl gap-2">
+	<p
+		class="ps-2 lg:ps-3 border-s-2 border-emerald-800 text-base sm:text-lg lg:text-xl"
+	>
 		{t["home.hero.contact.email"]}:
-		<a href="mailto:barid@chakram.xyz" class="link">barid@chakram.xyz</a>
+		<span class="ms-2">
+			<a href="mailto:barid@chakram.xyz" class="link">barid@chakram.xyz</a>
+		</span>
 	</p>
 </section>
