@@ -21,6 +21,9 @@ const projects = {
   "projects.minidrive.title": "Minidrive",
   "projects.minidrive.desc":
     "نسخة مخففة من Google Drive؛ يمكن للمستخدم إنشاء حساب، وحفظ الملفات والمجلدات وترتيبها، ونشر المجلدات عبر رابط عام.",
+  "projects.cellular.title": "محاكي أوتوماتا الخلايا",
+  "projects.cellular.desc":
+    "برنامج يحاكي مصفوفة خلايا (Cellular Automata)، فيه خلايا مختلفة من حيثُ الشكل والصفات 'الفيزيائية'، كالجاذبية وقابلية الاحتراق. مبرمج بـC99.",
 };
 
 export const ARABIC_MESSAGES = {

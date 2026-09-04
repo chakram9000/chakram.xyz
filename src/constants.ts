@@ -10,6 +10,8 @@ export type Technology =
   | "qt"
   | "ejs"
   | "prisma"
+  | "c"
+  | "raylib"
   | "js";
 
 export const TECH_ICONS: Record<Technology, string> = Object.freeze({
@@ -24,5 +26,7 @@ export const TECH_ICONS: Record<Technology, string> = Object.freeze({
   qt: "simple-icons:qt",
   ejs: "simple-icons:ejs",
   prisma: "simple-icons:prisma",
+  c: "simple-icons:c",
+  raylib: "simple-icons:raylib",
   js: "simple-icons:javascript",
 });

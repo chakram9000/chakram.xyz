@@ -3,6 +3,7 @@ import { getTranslations, type Locale } from "../../i18n/lib";
 import ProjectCard from "./ProjectCard.astro";
 import KhizanahIMG from "../../static/projects/khizanah.png";
 import MinidriveIMG from "../../static/projects/minidrive.png";
+import CellularIMG from "../../static/projects/cellautomata.png";
 
 interface Props {
 	locale: Locale;
@@ -29,6 +30,13 @@ const t = getTranslations(props.locale);
 			desc={t["projects.minidrive.desc"]}
 			githubURL="https://github.com/chakram9000/minidrive"
 			techUsed={["js", "express", "postgresql", "prisma", "ejs"]}
+		/>
+		<ProjectCard
+			img={CellularIMG}
+			title={t["projects.cellular.title"]}
+			desc={t["projects.cellular.desc"]}
+			githubURL="https://github.com/chakram9000/c_cellular_automata"
+			techUsed={["c", "raylib"]}
 		/>
 	</div>
 </section>
