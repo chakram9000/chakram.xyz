@@ -14,7 +14,7 @@ const hero = {
   "home.hero.p2":
     "أبرمج منذ 2019، ولدي خبرة في لغات وتقنيات مختلفة. وجلّ خبرتي المهنية في بناء واجهات مواقع الويب، إلا أنني أبني APIs و برامج Fullstack كذلك.",
   "home.hero.p3":
-    "أستخدم عادةً: Python , PostgresQL , Express , React , Astro , Typescript , Javascript وسابقًا Next.js. كذلك عندي اهتمام باللغات القريبة من الجهاز كـ: C.",
+    "أستخدم عادةً: Python ،PostgresQL ،Express ،React ،Astro ،Typescript ،Javascript وسابقًا Next.js. كذلك عندي اهتمام باللغات القريبة من الجهاز كـ: C.",
   "home.hero.p4":
     "أعتني بسرعة الإنتاج وسرعة المنتوج، وبفهم الأدوات التي أستخدمها بدلاً من النسخ واللصق الأعمى.",
   "home.hero.img_label": "(هذا ليس مكتبي)",
