@@ -17,7 +17,7 @@ const props = Astro.props;
 <html lang={props.locale} dir={props.locale === "ar" ? "rtl" : "ltr"}>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/gif" href="/worker.gif" />
+		<link rel="icon" type="image/png" href="/logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<Font cssVariable="--font-readex-pro" />
@@ -38,5 +38,9 @@ const props = Astro.props;
 			<slot />
 		</main>
 		<Footer locale={props.locale} />
+
+		<a class="block absolute top-4 left-4 size-2 lg:size-3" href="/wip">
+			<img id="worker" src="/worker.gif" />
+		</a>
 	</body>
 </html>
