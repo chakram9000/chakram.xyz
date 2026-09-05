@@ -45,7 +45,7 @@ const props = Astro.props;
 		LOCALES.filter((l) => l !== props.locale).map((l) => (
 			<a
 				href={getRelativeLocaleUrl(l, "/")}
-				class={clsx("text-xl", l === "ar" && "pb-1.25")}
+				class={clsx("text-xl", l === "ar" && "pb-1")}
 			>
 				{localeRepresentation(l)}
 			</a>
