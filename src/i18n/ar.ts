@@ -5,6 +5,8 @@ const header = {
 
 const hero = {
   "home.title": "الصفحة الرئيسية",
+  "home.desc":
+    "صفحة محمد أكرم الشخصية، فيها تعريف بتخصصاته واستعراض لبعض مشاريعه.",
   "home.hero.name": "ش. محمد أكرم",
   "home.hero.hello": "مرحبًا بكم",
   "home.hero.p1":

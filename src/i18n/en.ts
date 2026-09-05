@@ -7,6 +7,8 @@ const header = {
 
 const hero = {
   "home.title": "Home",
+  "home.desc":
+    "Mohammed Akram's webpage. It contains a brief biography, along with a showcase for some of his projects.",
   "home.hero.name": "C. Mohammed Akram",
   "home.hero.hello": "Welcome",
   "home.hero.p1":

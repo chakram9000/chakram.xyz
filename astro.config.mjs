@@ -7,6 +7,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://chakram.xyz",
   vite: {
     plugins: [tailwindcss()],
   },
@@ -30,7 +31,6 @@ export default defineConfig({
     locales: LOCALES,
     defaultLocale: "ar",
     routing: {
-      fallbackType: "rewrite",
       prefixDefaultLocale: true,
       redirectToDefaultLocale: true,
     },

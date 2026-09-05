@@ -13,7 +13,7 @@ const locale = Astro.currentLocale as Locale;
 const t = getTranslations(locale);
 ---
 
-<Boilerplate title={t["home.title"]} locale={locale}>
+<Boilerplate title={t["home.title"]} desc={t["home.desc"]} locale={locale}>
 	<Hero locale={locale} />
 	<Projects locale={locale} />
 </Boilerplate>
