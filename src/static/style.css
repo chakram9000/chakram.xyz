@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-text: theme(--color-stone-200);
   --color-text-heading: theme(--color-stone-100);
