@@ -11,19 +11,20 @@ const props = Astro.props;
 const t = getTranslations(props.locale);
 ---
 
-<section class="flex flex-col gap-3 lg:gap-4 items-stretch">
+<section class="flex flex-col gap-4 items-stretch">
 	<div class="rounded-xl overflow-hidden shadow">
-		<Image
-			src={heroImage}
+		<img
+			src="/hero.webp"
 			alt=""
-			class="opacity-90 dark:opacity-60 h-40 lg:h-56 object-cover object-[0%_25%]"
+			class="opacity-90 dark:opacity-80 w-full h-32 md:h-40 lg:h-56 object-cover object-[0%_25%]"
 		/>
 	</div>
 
+	<h1>{t["home.hero.hello"]}</h1>
+
 	<div
-		class="flex-1 flex flex-col gap-5 text-justify [&_p]:font-light [&_p]:leading-7 lg:[&_p]:leading-6.5"
+		class="flex-1 flex flex-col gap-5 rtl:text-justify font-light leading-7 lg:leading-6.5"
 	>
-		<h1>{t["home.hero.hello"]}</h1>
 		<p>{t["home.hero.p1"]} {t["home.hero.p2"]}</p>
 		<p>{t["home.hero.p3"]}</p>
 		<p>{t["home.hero.p4"]}</p>
