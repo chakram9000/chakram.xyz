@@ -14,3 +14,9 @@ export function getTranslations(locale: Locale): UIMessages {
 
   throw Error(`Passed an invalid locale: ${locale}`);
 }
+
+export function localeRepresentation(locale: Locale): string {
+  if (locale === "ar") return "ع";
+
+  return locale.toUpperCase();
+}
