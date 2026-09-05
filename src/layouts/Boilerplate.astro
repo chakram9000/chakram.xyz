@@ -23,11 +23,11 @@ const props = Astro.props;
 		<title>chakram.xyz | {props.title}</title>
 	</head>
 	<body
-		class="dark bg-stone-950 flex flex-col items-stretch rtl:font-(family-name:--font-readex-pro)"
+		class="bg-amber-200 dark:bg-stone-950 text-stone-700 dark:text-stone-200 flex flex-col items-stretch rtl:font-(family-name:--font-readex-pro)"
 	>
 		<Header locale={props.locale} />
 		<main
-			class="bg-stone-900 flex flex-col items-stretch border border-stone-700 mx-auto mb-6 lg:mb-8 max-w-4xl w-11/12 *:p-4 sm:*:p-6 lg:*:p-8 *:border-b *:border-b-stone-700 md:shadow-2xl shadow-stone-100/10"
+			class="bg-amber-100 dark:bg-stone-900 flex flex-col items-stretch dark:border dark:border-stone-700 mx-auto mb-6 lg:mb-8 max-w-4xl w-11/12 *:p-4 sm:*:p-6 lg:*:p-8 *:border-b *:border-b-amber-300 dark:*:border-b-stone-700 md:shadow-2xl shadow-stone-900/20 dark:shadow-stone-100/10"
 		>
 			<slot />
 		</main>

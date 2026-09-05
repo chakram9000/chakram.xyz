@@ -39,7 +39,7 @@ const projects = {
 };
 
 const footer = {
-  "footer.built-with": "تم بناء هذا الموقع باستخدام Astro وTailwindcss.",
+  "footer.built-with": "تم بناء هذا الموقع باستخدام Astro.",
   "footer.wip":
     "لا يزال هذا الموقع قيد البناء! نرجو أن تعودوا له بين الفينة والفينة.",
 };

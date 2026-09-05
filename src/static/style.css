@@ -2,16 +2,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
-  --color-text: theme(--color-stone-200);
-  --color-text-heading: theme(--color-stone-100);
-  --color-text-muted: theme(--color-stone-400);
-  --color-text-dim: theme(--color-stone-500);
-}
-
 @layer base {
   body {
-    color: var(--color-text);
+    @apply text-stone-700 dark:text-stone-200;
   }
 
   h1,
@@ -20,14 +13,14 @@
   h4,
   h5,
   h6 {
-    color: var(--color-text-heading);
+    @apply text-stone-900 dark:text-stone-100;
   }
 
   h1 {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-bold text-center md:text-start text-transparent bg-linear-to-t from-text-heading from-40% to-text-muted bg-clip-text leading-11 lg:leading-15 px-1 lg:px-2;
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold text-center md:text-start text-transparent bg-linear-to-t from-stone-900 dark:from-stone-100 from-40% to-stone-500 dark:to-stone-400 bg-clip-text leading-11 lg:leading-15 px-1 lg:px-2;
   }
 
   .link {
-    @apply underline text-emerald-300 hover:text-emerald-500;
+    @apply underline text-emerald-700 hover:text-emerald-800 dark:text-emerald-300 dark:hover:text-emerald-500;
   }
 }

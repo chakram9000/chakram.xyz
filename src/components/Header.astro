@@ -14,19 +14,22 @@ const t = getTranslations(props.locale);
 ---
 
 <header
-	class="h-16 bg-stone-900 border-t border-stone-700 flex items-center gap-2 lg:gap-4 my-2 lg:my-4 xl:my-6 mx-auto max-w-2xl px-3 sm:px-4 lg:px-6 rounded-full *:opacity-70 *:hover:opacity-100 *:transition-all *:duration-300 *:font-bold"
+	class="h-16 bg-amber-100 dark:bg-stone-900 border-t border-amber-300 dark:border-stone-700 flex items-center gap-2 lg:gap-4 my-2 lg:my-4 xl:my-6 mx-auto max-w-2xl px-3 sm:px-4 lg:px-6 rounded-full *:opacity-70 *:hover:opacity-100 *:transition-all *:duration-300 *:font-bold"
 >
-	<a href={getRelativeLocaleUrl(props.locale, "/")} class="size-14 -mx-2">
+	<a
+		href={getRelativeLocaleUrl(props.locale, "/")}
+		class="size-14 -mx-2 invert-100 dark:invert-0"
+	>
 		<Image src={Logo} alt="Home" />
 	</a>
-	<div class="h-1/2 w-px bg-stone-700"></div>
+	<div class="h-1/2 w-px bg-amber-200 dark:bg-stone-700"></div>
 	<a href="https://github.com/chakram9000" target="_blank">
 		{t["header.github"]}
 	</a>
-	<div class="h-1/2 w-px bg-stone-700"></div>
+	<div class="h-1/2 w-px bg-amber-200 dark:bg-stone-700"></div>
 	<button id="theme-switch" class="hover:cursor-pointer">
-		<MoonIcon class="block dark:hidden fill-white" />
-		<SunIcon class="hidden dark:block" />
+		<MoonIcon class="block dark:hidden fill-text" />
+		<SunIcon class="hidden dark:block text-amber-300" />
 	</button>
 	<script>
 		const btn = document.getElementById("theme-switch") as HTMLButtonElement;
