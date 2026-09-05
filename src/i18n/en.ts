@@ -9,10 +9,10 @@ const hero = {
   "home.title": "Home",
   "home.desc":
     "Mohammed Akram's webpage. It contains a brief biography, along with a showcase for some of his projects.",
-  "home.hero.name": "C. Mohammed Akram",
+  "home.hero.name": "Mohammed Akram",
   "home.hero.hello": "Welcome",
   "home.hero.p1":
-    "I'm C. Mohammed Akram, a Fullstack web developer, Computer Science student specializing in AI in Algeria.",
+    "I'm Mohammed Akram, a Fullstack web developer, Computer Science student specializing in AI in Algeria.",
   "home.hero.p2":
     "I've been coding since 2019, with experience in various languages and technologies. Most of my professional experience is in building website frontends, though I also build APIs and Fullstack applications.",
   "home.hero.p3":
